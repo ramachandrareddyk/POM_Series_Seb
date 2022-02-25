@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-24T09:16:07 IST" name="Default suite" finished-at="2022-02-24T09:16:51 IST" duration-ms="44317">
+    <groups>
+    </groups>
+    <test started-at="2022-02-24T09:16:07 IST" name="Default test" finished-at="2022-02-24T09:16:51 IST" duration-ms="44317">
+      <class name="TestCases.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.HomePageTest@696da30b]" started-at="2022-02-24T09:16:07 IST" name="setUp" finished-at="2022-02-24T09:16:26 IST" duration-ms="19404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyHomepageTitleTest()[pri:0, instance:TestCases.HomePageTest@696da30b]" started-at="2022-02-24T09:16:26 IST" name="VerifyHomepageTitleTest" finished-at="2022-02-24T09:16:26 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyHomepageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.HomePageTest@696da30b]" started-at="2022-02-24T09:16:26 IST" name="tearDown" finished-at="2022-02-24T09:16:27 IST" duration-ms="723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.HomePageTest@696da30b]" started-at="2022-02-24T09:16:27 IST" name="setUp" finished-at="2022-02-24T09:16:34 IST" duration-ms="7335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifySearchBoxTest()[pri:0, instance:TestCases.HomePageTest@696da30b]" started-at="2022-02-24T09:16:34 IST" name="VerifySearchBoxTest" finished-at="2022-02-24T09:16:35 IST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySearchBoxTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.HomePageTest@696da30b]" started-at="2022-02-24T09:16:35 IST" name="tearDown" finished-at="2022-02-24T09:16:35 IST" duration-ms="574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.HomePageTest@696da30b]" started-at="2022-02-24T09:16:35 IST" name="setUp" finished-at="2022-02-24T09:16:41 IST" duration-ms="6237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifySearchButtonTest()[pri:0, instance:TestCases.HomePageTest@696da30b]" started-at="2022-02-24T09:16:41 IST" name="VerifySearchButtonTest" finished-at="2022-02-24T09:16:42 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySearchButtonTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.HomePageTest@696da30b]" started-at="2022-02-24T09:16:42 IST" name="tearDown" finished-at="2022-02-24T09:16:42 IST" duration-ms="552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.HomePageTest@696da30b]" started-at="2022-02-24T09:16:42 IST" name="setUp" finished-at="2022-02-24T09:16:50 IST" duration-ms="8326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyTonavigationBarTest()[pri:0, instance:TestCases.HomePageTest@696da30b]" started-at="2022-02-24T09:16:50 IST" name="VerifyTonavigationBarTest" finished-at="2022-02-24T09:16:51 IST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTonavigationBarTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.HomePageTest@696da30b]" started-at="2022-02-24T09:16:51 IST" name="tearDown" finished-at="2022-02-24T09:16:51 IST" duration-ms="614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.HomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
