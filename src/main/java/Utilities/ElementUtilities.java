@@ -7,11 +7,19 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ElementUtilities {
+import Base.BasePage;
+
+public class ElementUtilities extends BasePage{
 	
-	static WebDriver driver;
+	WebDriver driver;
 	
-	public static WebElement getElement(By Locater) {
+	public ElementUtilities(WebDriver driver) {
+		this.driver=driver;
+	}
+	
+	
+	
+	public WebElement getElement(By Locater) {
 		WebElement elemnt=null;
 		try {
 		elemnt=driver.findElement(Locater);
@@ -21,7 +29,7 @@ public class ElementUtilities {
 		return elemnt;
 	}
 	//---------*****Perform click*****------------------------//
-	public static void doClick(By Locater) {
+	public void doClick(By Locater) {
 		try {
 			getElement(Locater).click();
 		} catch (Exception e) {
@@ -30,7 +38,7 @@ public class ElementUtilities {
 	}
 	//---------*****Perform click using actions class*****----------------//
 	
-	public static void doActionClick(By Locater) {
+	public void doActionClick(By Locater) {
 		try {
 			Actions act = new Actions(driver);
 			act.click(getElement(Locater)).build().perform();
@@ -41,7 +49,7 @@ public class ElementUtilities {
 	
 	//------------------***SendKeys***------------------------------//
 	
-	public static void doSendKeys(By Locater, String value) {
+	public void doSendKeys(By Locater, String value) {
 		
 		try {
 			getElement(Locater).clear();
@@ -53,7 +61,7 @@ public class ElementUtilities {
 	}
 	
 	//--------------*****Send keys using actions class*****----------------//
-	public static void doActionsSendKeys(By Locater, String value) {
+	public void doActionsSendKeys(By Locater, String value) {
 		try {
 			Actions act = new Actions(driver);
 			act.sendKeys(getElement(Locater), value).build().perform();
@@ -64,7 +72,7 @@ public class ElementUtilities {
 	}
 	
 	//--------------*****getText*****--------------------------//
-	public static String doGetText(By Locater) {
+	public String doGetText(By Locater) {
 		String text=null;
 		try {
 			text=getElement(Locater).getText();
@@ -75,7 +83,7 @@ public class ElementUtilities {
 	}
 	//---------------*****IsDisplayed*****---------------------------//
 	
-	public static boolean doIsDisplayed(By Locater) {
+	public boolean doIsDisplayed(By Locater) {
 		boolean flag= false;
 		try {
 			flag=getElement(Locater).isDisplayed();
@@ -87,7 +95,7 @@ public class ElementUtilities {
 	
 	//--------------*****doGetTitle*****----------------------------//
 	
-	public static String doGetTitle() {
+	public String doGetTitle() {
 		String title=null;
 		try {
 			title= driver.getTitle();

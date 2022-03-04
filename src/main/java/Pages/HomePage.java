@@ -9,11 +9,13 @@ import Utilities.ElementUtilities;
 public class HomePage extends BasePage{
 	
 	WebDriver driver;
+	ElementUtilities utils;
 	
 	
 	//page class constractor
 	public HomePage(WebDriver driver) {
 		this.driver=driver; 
+		utils= new ElementUtilities(driver);
 	}
 	
 	//Page objects using By locater
@@ -35,7 +37,7 @@ public class HomePage extends BasePage{
 	public boolean isSearchBoxExist() {
 		//return driver.findElement(SearchTextBox).isDisplayed();
 		
-		return ElementUtilities.getElement(SearchButton).isDisplayed();
+		return utils.getElement(SearchButton).isDisplayed();
 	}
 	
 	public boolean isSearchButtonExist() {
@@ -47,7 +49,7 @@ public class HomePage extends BasePage{
 	}
 	
 	public void navigateToLoginPage() {
-		ElementUtilities.doClick(MyAccount);
+		utils.doClick(MyAccount);
 		driver.findElement(Login).click();
 		
 	

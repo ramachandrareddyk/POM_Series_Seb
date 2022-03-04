@@ -10,9 +10,10 @@ import Utilities.ElementUtilities;
 public class LoginPage extends BasePage{
 	
 	WebDriver driver;
-	
+	ElementUtilities utils;
 	public LoginPage(WebDriver driver) {
 		this.driver=driver;
+		utils= new ElementUtilities(driver);
 	}
 	
 	
@@ -24,24 +25,26 @@ public class LoginPage extends BasePage{
 	
 	
 	public String getLoginPageTitle() {
-		return ElementUtilities.doGetTitle();
+		return utils.doGetTitle();
 	}
 	
-	public void doLogin(String username, String password) {
-		ElementUtilities.doSendKeys(Username, username);
-		ElementUtilities.doSendKeys(Password, password);
-		ElementUtilities.doClick(LoginBtn);;
+	public MyAccountPage doLogin(String username, String password) {
+		utils.doSendKeys(Username, username);
+		utils.doSendKeys(Password, password);
+		utils.doClick(LoginBtn);
+		
+		return new MyAccountPage(driver);
 		
 	}
 	
 	public boolean isWarningMessageDisPlayed() {
-		return ElementUtilities.doIsDisplayed(Warningmessage);
+		return utils.doIsDisplayed(Warningmessage);
 	}
 	
 	
 	
 	public void clickOnForgetPassword() {
-		ElementUtilities.doGetText(forgetPassword);
+		utils.doGetText(forgetPassword);
 	}
 	
 	
